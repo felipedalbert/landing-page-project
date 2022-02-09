@@ -20,7 +20,6 @@
 - CSS 
 
 <img src="src/imagens/screenshot.png" alt="Languages">
-<br>
 
 ## How to use?
 
@@ -50,10 +49,8 @@ The user will have the best experience on all devices and on different screen si
 <br>
 <br>
 <br>
-<br>
 
 # Projeto Landing Page (português)
-<br>
 
 >Este projeto tem a função de simular uma página web totalmente responsiva de uma agência de tecnologia. Esta landing page pode ser usada como demonstração em empresas e diversos tipos de serviços.
 
@@ -68,7 +65,7 @@ The user will have the best experience on all devices and on different screen si
 >[Link para página na web](https://felipedalbert.github.io/landing-page-project/)
 
 <br>
-<br>
+
 
 ## Tecnologias utilizadas
 - JavaScript
@@ -76,12 +73,8 @@ The user will have the best experience on all devices and on different screen si
 - CSS 
 
 <img src="src/imagens/screenshot.png" alt="Linguagens">
-<br>
-<br>
-<br>
 
 ## Como utilizar?
-<br>
 
 ### 1 - Menu de navegação
 ```
