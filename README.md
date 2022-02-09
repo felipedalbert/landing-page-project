@@ -34,7 +34,8 @@ The navigation menu allows the user to jump directly to a specific area of the p
 ### 2 - Image sequence
 ```
 It is possible to change the image of the panel through the arrow button in the area of 
-​​"nossos projetos". When the arrow changes color to gray it means there are no more images to display.
+​​"nossos projetos". When the arrow changes color to gray it means there are no more images 
+to display.
 ```
 <img src="src/imagens/sequence.gif" alt="Image sequence" width="400px" border-style="solid" border="2px">
 
