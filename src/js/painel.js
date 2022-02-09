@@ -1,15 +1,5 @@
-/* 
-    Quando o usuário clicar na seta avançar o sistema deve esconder todas as imagens, para que consequentemente mostre a próxima.
 
-        A imagem atual começa em 0, pois é o primeiro elemento. Assim que a âncora "avançar" for clicada, é preciso adicionar + 1 ao contador de imagens para ser 
-        compreendido que a segunda imagem será mostrada.
 
-            esconder todas as imagens:
-                selecionar todas as imagens usando o DOM e remover a classse mostrar.
-
-            mostrar a próxima imagem:
-                selecionar todas as imagens, descobrir qual é a próxima, e colocar a classe 'mostrar' nela.
-*/
 
 const imagensPainel = document.querySelectorAll('.imagem-painel');
 const setaAvancar = document.getElementById ('btn-avancar');
