@@ -5,7 +5,7 @@
 <br>
 
 <div align="center" background-color="">
-    <img src="src/imagens/screen.gif" alt="Web page gif" width="600px" border-style="solid" border="2px" >
+    <img src="src/imagens/screen.gif" alt="Web page gif" width="700px" border-style="solid" border="2px" >
 </div>
 <br>
 
