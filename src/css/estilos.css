@@ -89,7 +89,7 @@ html {
     border-radius: 80px;
 }
 
-@media(max-width: 635px) {
+@media(max-width: 684px) {
     .cabecalho {
         justify-content: center;
     }
@@ -100,9 +100,15 @@ html {
 
     .cabecalho .menu .item a {
         font-size: calc(0.6em + 1);
+        text-align: right;
     }
 }
 
+@media(max-width: 406px){
+    .cabecalho .menu .item.btn-qs{
+        width: 8em;
+    }
+}
 
 /* CABECALHO*/
 
