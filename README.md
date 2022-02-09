@@ -52,14 +52,14 @@ The user will have the best experience on all devices and on different screen si
 <br>
 <br>
 
-# Projeto Landing Page (português)
+# Projeto de Landing Page (português)
 
 >Este projeto tem a função de simular uma página web totalmente responsiva de uma agência de tecnologia. Esta landing page pode ser usada como demonstração em empresas e diversos tipos de serviços.
 
 <br>
 
-<div align="center" background-color="">
-    <img src="src/imagens/screen.gif" alt="gif página web" width="600px" border-style="solid" border="2px" >
+<div align="left" background-color="">
+    <img src="src/imagens/screen.gif" alt="gif página web" width="800px" border-style="solid" border="2px" >
 </div>
 <br>
 
