@@ -41,7 +41,7 @@ setaVoltar.addEventListener('click', function() {
     console.log('clicou na seta voltar');
     
     if(imagemAtual === 0){
-        console.log('Não existem elemnetos anteriores, portanto não é possével voltar!');
+        console.log('Não existem elementos anteriores, portanto não é possével voltar!');
         return(setaVoltar.classList.add('fim'));
     }
 
