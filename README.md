@@ -37,7 +37,7 @@ It is possible to change the image of the panel through the arrow button in the 
 ​​"nossos projetos". When the arrow changes color to gray it means there are no more images 
 to display.
 ```
-<img src="src/imagens/sequence.gif" alt="Image sequence" width="400px" border-style="solid" border="2px">
+<img src="src/imagens/projects.gif" alt="Image sequence" width="400px" border-style="solid" border="2px">
 
 ---
 
@@ -91,7 +91,7 @@ O menu de navegação permite ao usuário pular diretamente para uma área espec
 É possível alterar a imagem do painel através do botão de seta na área de "nossos projetos". 
 Quando a seta muda de cor para cinza, significa que não há mais imagens para serem exibidas
 ```
-<img src="src/imagens/sequence.gif" alt="sequência de imagens" width="400px" border-style="solid" border="2px">
+<img src="src/imagens/projects.gif" alt="sequência de imagens" width="400px" border-style="solid" border="2px">
 
 ---
 

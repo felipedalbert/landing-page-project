@@ -61,11 +61,11 @@ html {
 
 
 .cabecalho {
+    font-size: 19px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 0;
-    max-width: 90%;
     margin: 0 auto;
     flex-wrap: wrap;
 }
