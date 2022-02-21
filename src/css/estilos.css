@@ -66,17 +66,16 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 25px 0;
-    margin: auto;
     flex-wrap: wrap;
+    margin-inline: auto;
+    max-width: 90%;
 }
 
 .cabecalho .navegacao .menu {
     display: flex;
 }
 
-.cabecalho .navegacao .menu .item {
-    margin: 10px;
-}
+
 
 .cabecalho .navegacao .menu .item a {
     padding: 15px;
@@ -89,18 +88,28 @@ html {
     border-radius: 80px;
 }
 
+@media(max-width: 729px){
+    .cabecalho{
+        max-width: max-content;
+    }
+}
+
 @media(max-width: 684px) {
     .cabecalho {
         justify-content: center;
-    }
-
-    .cabecalho .logo {
-        margin-bottom: 30px;
+        text-align: center;
+        
     }
 
     .cabecalho .menu .item a {
         font-size: calc(0.6em + 1);
         text-align: right;
+    }
+}
+
+@media(max-width: 596px){
+    .cabecalho .navegacao{
+        margin-top: 20px;
     }
 }
 
