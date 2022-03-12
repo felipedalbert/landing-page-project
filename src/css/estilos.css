@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Public Sans', sans-serif;
+    min-width: 354px;
 }
 
 * {
