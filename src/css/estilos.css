@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Public Sans', sans-serif;
+    
 }
 
 * {
@@ -78,7 +79,7 @@ html {
 }
 
 .cabecalho .navegacao .menu .item a:hover {
-   background-color: #1ED760;
+    background-color: #1ED760;
     color: white;
     border-radius: 80px;
 }
@@ -87,15 +88,10 @@ html {
     background-color: #0f7031;
 }
 
-@media(max-width: 729px){
-    .cabecalho{
-        max-width: max-content;
-    }
-}
 
 @media(max-width: 684px) {
     .cabecalho {
-        justify-content: center;
+        
         text-align: center;
         
     }
@@ -106,17 +102,22 @@ html {
     }
 }
 
-@media(max-width: 596px){
+@media(max-width: 662px) {
+    .cabecalho{
+        justify-content: center;
+        text-align: center;
+    }
+
     .cabecalho .navegacao{
         margin-top: 30px;
     }
-}
 
-@media(max-width: 406px){
     .cabecalho .menu .item.btn-qs{
         width: 8em;
     }
 }
+
+
 
 /* CABECALHO*/
 
