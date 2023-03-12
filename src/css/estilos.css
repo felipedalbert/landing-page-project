@@ -155,11 +155,23 @@ html {
 }
 
 .conteudo-principal .paineis .projeto2 {
-    background-image: url('../imagens/painel2.jpg');
+    background-image: url('../imagens/painel2.png');
 }
 
 .conteudo-principal .paineis .projeto3 {
     background-image: url('../imagens/painel3.jpg');
+}
+
+.conteudo-principal .paineis .projeto4{
+    background-image: url('../imagens/painel4.png');
+}
+
+.conteudo-principal .paineis .projeto5 {
+    background-image: url('../imagens/painel5.jpg');
+}
+
+.conteudo-principal .paineis .projeto6 {
+    background-image: url('../imagens/painel6.png');
 }
 
 
