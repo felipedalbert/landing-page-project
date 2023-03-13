@@ -127,7 +127,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 600px;
     position: relative;
 }
 
@@ -211,9 +211,31 @@ html {
     right: 20px;
 }
 
-.fim{
-    filter: brightness(30%);    
+.conteudo-principal .paineis .bullets{
+    width: max-content;
+    display: flex;
+    column-gap: 12px;
+    position: absolute;
+    bottom: 30px;
 }
+
+.conteudo-principal .paineis .bullets .bullet{
+    height: 10px;
+    width: 10px;
+    outline: solid 1px #ffffff;
+    outline-offset: 2px;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+
+.conteudo-principal .paineis .bullets .mostrar.bullet{
+    background-color: #63b580;
+}
+
+
+
 
 /* PAINÉL */
 
