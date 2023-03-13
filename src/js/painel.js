@@ -1,6 +1,7 @@
 const imagensPainel = document.querySelectorAll('.imagem-painel');
 const setaAvancar = document.getElementById ('btn-avancar');
 const setaVoltar = document.getElementById ('btn-voltar');
+const bullets = document.querySelectorAll('.bullet')
 const totalDeImagens = imagensPainel.length - 1;
 let imagemAtual = 0;
 
@@ -25,6 +26,7 @@ function avancarImagem(){
 }
 
 function voltarImagem(){
+
     esconderImagens();
 
     if(imagemAtual === 0){
@@ -36,13 +38,19 @@ function voltarImagem(){
     mostrarImagem(); 
 }
 
-function carrosselAutomatico(){
-    avancarImagem()
+function clearTimer() {
+    clearInterval(timer);
+    timer = setInterval(avancarImagem, 5000); 
 }
 
-setInterval(avancarImagem, 6000)
+let timer = setInterval(avancarImagem, 5000);
 
-setaAvancar.addEventListener('click', avancarImagem)
+setaAvancar.addEventListener('click', ()=>{
+    avancarImagem()
+    clearTimer()
+})
 
-setaVoltar.addEventListener('click', voltarImagem)
-
+setaVoltar.addEventListener('click', ()=>{
+    voltarImagem() 
+    clearTimer()
+})
