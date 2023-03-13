@@ -23,6 +23,10 @@ function avancarImagem(){
     }
 
     mostrarImagem();
+
+    bullets.forEach((bullet, i) => {
+        bullet.classList.toggle('mostrar', i === imagemAtual);
+    });
 }
 
 function voltarImagem(){
@@ -30,12 +34,16 @@ function voltarImagem(){
     esconderImagens();
 
     if(imagemAtual === 0){
-        imagemAtual = 2
+        imagemAtual = totalDeImagens
     }else{
         imagemAtual--; 
     }
 
-    mostrarImagem(); 
+    mostrarImagem();
+
+    bullets.forEach((bullet, i) => {
+        bullet.classList.toggle('mostrar', i === imagemAtual);
+    });
 }
 
 function clearTimer() {
@@ -54,3 +62,17 @@ setaVoltar.addEventListener('click', ()=>{
     voltarImagem() 
     clearTimer()
 })
+
+bullets.forEach((bullet, index) => {
+    bullet.addEventListener('click', () => {
+        clearTimer()
+
+        imagensPainel.forEach((imagem, i) => {
+            imagem.classList.toggle('mostrar', i === index);
+            imagemAtual = index
+        });
+        bullets.forEach((bullet, i) => {
+            bullet.classList.toggle('mostrar', i === index);
+        });
+    });
+});
