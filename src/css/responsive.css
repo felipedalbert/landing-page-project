@@ -14,7 +14,7 @@
 
 @media(max-width: 900px) {
     .cabecalho .navegacao .menu .item a:active{
-        background-color: #1ED760;
+        background-color: #1fd75f;
     }
 
     .conteudo-principal .paineis {
