@@ -51,6 +51,8 @@ function clearTimer() {
     timer = setInterval(avancarImagem, 5000); 
 }
 
+
+
 let timer = setInterval(avancarImagem, 5000);
 
 setaAvancar.addEventListener('click', ()=>{

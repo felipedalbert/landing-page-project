@@ -1,0 +1,133 @@
+
+
+/* RESPONSIVE */
+
+.cabecalho .navegacao label{
+    display: block;
+    margin-left: 140px;
+}
+
+.cabecalho .content-menu{
+    display: none;
+    width: 60px;
+    height: 60px;
+}
+
+.cabecalho .hamburguer{
+    background-color: #000000;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: .5s ease-in-out;
+}
+
+.cabecalho .hamburguer:before, .cabecalho .hamburguer:after{
+    background-color: #73eb8f;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+
+.cabecalho .hamburguer:before{
+    top: -10px;
+}
+
+.cabecalho .hamburguer:after{
+    top: 10px;
+}
+
+.cabecalho input{
+    display: none;
+}
+
+.cabecalho input:checked ~ label .hamburguer{
+    transform: rotate(45deg);
+}
+
+.cabecalho input:checked ~ label .hamburguer:before{
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.cabecalho input:checked ~ label .hamburguer:after{
+    transform: rotate(90deg);
+    top: 0;
+}
+
+@media(max-width: 900px){
+    .cabecalho .navegacao{
+        margin-top: 25px;
+        
+    }
+
+    .cabecalho .content-menu{
+        display: block;
+    }
+
+    .cabecalho .navegacao .menu {
+        flex-direction: column;
+    }
+
+    .cabecalho .navegacao ul{
+        display: block;
+        width: 200px;
+        padding: 20px;
+        border-radius: 7px;
+        background-color: #00000039;
+        backdrop-filter: blur(8px);
+        animation: hide-item .4s forwards;
+        pointer-events: none;
+    }
+
+    .cabecalho .navegacao ul li a{
+      color: #fff;
+      text-shadow: 1px 1px 2px #ffffff; 
+    }
+
+
+    @keyframes emerge {
+        from { 
+            transform: scale(.9);
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    @keyframes hide-item {
+        from {
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+            transform: scale(.9);
+            visibility: hidden;
+        }
+    }
+
+    .cabecalho nav{
+        position: fixed;
+        top: 8px;
+        right: 16px;
+        z-index: 1;
+    }
+
+    .cabecalho nav ul a{
+        text-align: center;
+        padding: 20px;
+        display: block;
+    }
+
+    .cabecalho input:checked ~ ul{
+        animation: emerge .5s;
+        pointer-events: all;
+    }
+}

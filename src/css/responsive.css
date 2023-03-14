@@ -1,0 +1,60 @@
+@media(max-width:1200px) {
+    .quem-somos .conteudo {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 20px;
+    }
+    .quem-somos .conteudo .imagem {
+        display: none;
+    }
+    .quem-somos .conteudo .informacoes {
+        width: 100%;
+    }
+}
+
+@media(max-width: 900px) {
+    .cabecalho .navegacao .menu .item a:active{
+        background-color: #1ED760;
+    }
+
+    .conteudo-principal .paineis {
+        height: 70vh;
+    }
+
+    .rodape .navegacao {
+        justify-content: center;
+    }
+    .rodape .navegacao .logo {
+        margin-bottom: 30px;
+    }
+    .rodape .navegacao .logo,
+    .rodape .mavegacao .redes-sociais {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 662px) {
+
+    .cabecalho .logo{
+        transform: scale(.9);
+        margin-left: -20px;
+    }
+
+    .cabecalho .menu .item.btn-qs{
+        width: 8em;
+    }
+
+    .conteudo-principal .paineis .seta{
+        width: 12vw;
+        height: 16vh;
+    }
+
+    .conteudo-principal .paineis .seta.btn-voltar {
+        left: 2vw;
+    }
+    
+    .conteudo-principal .paineis .seta.btn-avancar {
+        right: 2vw;
+    }
+}

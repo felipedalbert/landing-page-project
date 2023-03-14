@@ -1,52 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;800&display=swap');
-
-body {
-    font-family: 'Public Sans', sans-serif;
-    min-width: 354px;
-}
-
-body::-webkit-scrollbar {
-    width: 7px;    
-}
-  
-body::-webkit-scrollbar-track {
-    background-color: #d7d7d7;
-    
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: rgb(55, 116, 49);    
-    border-radius: 5px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #000
-}
-
-img {
-    max-width: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* LOGO */
-
 .logo .imagem {
     width: 100px;
-    margin-left: 5px;
 }
 
 .logo {
@@ -67,20 +20,14 @@ html {
     color: #1ED760;
 }
 
-/* LOGO */
-
-/* CABEÇALHO */
-
-
 .cabecalho {
     font-size: 19px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
+    padding: 25px;
     flex-wrap: wrap;
     margin-inline: auto;
-    max-width: 90%;
 }
 
 .cabecalho .navegacao .menu {
@@ -102,50 +49,12 @@ html {
     background-color: #0f7031;
 }
 
-@media(max-width: 684px) {
-    .cabecalho {   
-        text-align: center;  
-    }
-
-    .cabecalho .menu .item a {
-        font-size: calc(0.6em + 1);
-        text-align: right;
-    }
-}
-
-@media(max-width: 662px) {
-    .cabecalho{
-        justify-content: center;
-        text-align: center;
-    }
-
-    .cabecalho .navegacao{
-        margin-top: 30px;
-    }
-
-    .cabecalho .menu .item.btn-qs{
-        width: 8em;
-    }
-}
-
-
-
-/* CABECALHO*/
-
-/* PAINÉL */
-
 .conteudo-principal .paineis {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 88vh;
     position: relative;
-}
-
-@media(max-width:900px) {
-    .conteudo-principal .paineis {
-        height: 500px;
-    }
 }
 
 .conteudo-principal .paineis .imagem-painel {
@@ -202,8 +111,8 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 60px;
-    height: 60px;
+    width: 8vw;
+    height: 8vh;
     position: absolute;
     text-indent: 100%;
     overflow: hidden;
@@ -214,12 +123,12 @@ html {
 }
 
 .conteudo-principal .paineis .seta.btn-voltar {
-    left: 20px;
+    left: 2vw;
     transform: rotateY(180deg);
 }
 
 .conteudo-principal .paineis .seta.btn-avancar {
-    right: 20px;
+    right: 2vw;
 }
 
 .conteudo-principal .paineis .bullets{
@@ -238,20 +147,13 @@ html {
     border-radius: 10px;
     background-color: transparent;
     cursor: pointer;
+    transition: .2s ease-in-out;
     
 }
 
 .conteudo-principal .paineis .bullets .mostrar.bullet{
     background-color: #63b580;
 }
-
-
-
-
-/* PAINÉL */
-
-
-/* QUEM SOMOS */
 
 .quem-somos {
     background-color: #2941ab;
@@ -284,24 +186,6 @@ html {
     color: white;
     font-weight: 400;
 }
-
-@media(max-width:1200px) {
-    .quem-somos .conteudo {
-        flex-direction: column;
-        text-align: center;
-        padding: 100px 20px;
-    }
-    .quem-somos .conteudo .imagem {
-        display: none;
-    }
-    .quem-somos .conteudo .informacoes {
-        width: 100%;
-    }
-}
-
-/* QUEM SOMOS */
-
-/* RODAPÉ */
 
 .rodape {
     padding: 80px 0 20px 0;
@@ -344,19 +228,3 @@ html {
     margin-top: 70px;
     text-align: center;
 }
-
-@media(max-width: 800px) {
-    .rodape .navegacao {
-        justify-content: center;
-    }
-    .rodape .navegacao .logo {
-        margin-bottom: 30px;
-    }
-    .rodape .navegacao .logo,
-    .rodape .mavegacao .redes-sociais {
-        width: 100%;
-        justify-content: center;
-    }
-}
-
-/* RODAPÉ */
