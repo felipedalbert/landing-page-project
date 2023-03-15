@@ -5,6 +5,7 @@ const bullets = document.querySelectorAll('.bullet')
 const totalDeImagens = imagensPainel.length - 1;
 let imagemAtual = 0;
 
+
 function esconderImagens(){
     imagensPainel[imagemAtual].classList.remove('mostrar');
 }
@@ -27,6 +28,8 @@ function avancarImagem(){
     bullets.forEach((bullet, i) => {
         bullet.classList.toggle('mostrar', i === imagemAtual);
     });
+
+    console.log(imagemAtual)
 }
 
 function voltarImagem(){

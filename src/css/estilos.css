@@ -36,13 +36,13 @@
 
 .cabecalho .navegacao .menu .item a {
     padding: 15px;
-    transition: 0.2s ease-in-out;
+    transition: .2s ease-in-out;
+    border-radius: 80px;
 }
 
 .cabecalho .navegacao .menu .item a:hover {
     background-color: #1ED760;
     color: white;
-    border-radius: 80px;
 }
 
 .cabecalho .navegacao .menu .item a:active{
@@ -224,7 +224,20 @@
     background-color: #1ED760;
 }
 
-.rodape .copyright {
+.rodape .copyright{
+    display: flex;
+    flex-direction: column;
     margin-top: 70px;
     text-align: center;
+    row-gap: 3px;
+}
+
+.rodape .copyright a{
+    color: #1ED760;
+    font-weight: 600;
+    transition: ease-in .2s;
+}
+
+.rodape .copyright a:hover{
+    color: #20b554;
 }
