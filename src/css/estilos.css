@@ -37,7 +37,12 @@
 .cabecalho .navegacao .menu .item a {
     padding: 15px;
     transition: .2s ease-in-out;
-    border-radius: 80px;
+    border-radius: 40px;
+    color: #0d411f;
+}
+
+.cabecalho .navegacao .menu .item:nth-child(2) {
+    margin-inline: 10px;
 }
 
 .cabecalho .navegacao .menu .item a:hover {
