@@ -108,14 +108,14 @@
         }
     }
 
-    .cabecalho .navigation{
+    .cabecalho .navegacao{
         position: fixed;
         top: 8px;
         right: 16px;
         z-index: 1;
     }
 
-    .cabecalho .navigation ul a{
+    .cabecalho .navegacao ul a{
         text-align: center;
         padding: 20px;
         display: block;

@@ -1,15 +1,39 @@
-@media(max-width:1200px) {
+
+
+@media(max-width:1024px) {
     .quem-somos .conteudo {
         flex-direction: column;
         text-align: center;
-        padding: 100px 20px;
+        padding: 80px 20px;
     }
+
+    .quem-somos .conteudo .informacoes .titulo{
+        font-size: 35px;
+    }
+    
+    .quem-somos .conteudo .informacoes .texto {
+        font-size: 18px;
+        margin-block: 35px;
+    }
+
+    .quem-somos .conteudo .informacoes .saiba-mais{
+        font-size: 18px;
+    }
+
     .quem-somos .conteudo .imagem {
         display: none;
     }
     .quem-somos .conteudo .informacoes {
         width: 100%;
     }
+
+    .rodape .redes-sociais a {
+        font-size: 20px;
+        padding: 25px;
+        height: 25px;
+        width: 25px;
+    }
+    
 }
 
 @media(max-width: 900px) {

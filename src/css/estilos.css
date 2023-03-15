@@ -173,19 +173,64 @@
     width: 60%;
 }
 
-
 .quem-somos .conteudo .informacoes .titulo {
-    font-size: 50px;
+    font-size: 3vw;
     color: #1ED760;
-    margin-bottom: 20px;
 }
 
 .quem-somos .conteudo .informacoes .texto {
-    font-size: 20px;
+    font-size: 1.3vw;
     line-height: 1.5;
     color: white;
     font-weight: 400;
+    margin-block: 5%;
 }
+
+.quem-somos .conteudo .informacoes .saiba-mais{
+    color: #8cb9ed;
+    font-size: 1.3vw;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.quem-somos .conteudo .informacoes .saiba-mais {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition: ease-in-out .2s;
+}
+
+.quem-somos .conteudo .informacoes .saiba-mais:hover{
+    color: #dae5f1;
+}
+
+.quem-somos .conteudo .informacoes .saiba-mais:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: -3px;
+    background-color: currentColor;
+    height: 1.5px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.quem-somos .conteudo .informacoes .saiba-mais:hover:before, .quem-somos .conteudo .informacoes .saiba-mais:focus:before, .quem-somos .conteudo .informacoes .saiba-mais:active:before {
+    right: 0;
+    background-color: #dae5f1;
+}
+
+
 
 .rodape {
     padding: 80px 0 20px 0;
@@ -207,12 +252,14 @@
 .rodape .redes-sociais a {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0 10px;
-    font-size: 30px;
+    font-size: 25px;
     border: 2px solid #111;
     border-radius: 50%;
-    padding: 15px;
-    width: 65px;
+    padding: 30px;
+    height: 30px;
+    width: 30px;
     transition: 0.3s ease-in-out;
 }
 
