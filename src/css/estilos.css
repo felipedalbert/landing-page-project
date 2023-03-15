@@ -216,12 +216,21 @@
     transition: 0.3s ease-in-out;
 }
 
+.rodape .redes-sociais i{
+    transition: 0.3s ease-in-out;
+}
+
 .rodape .navegacao .logo .imagem {
     width: 100px;
 }
 
 .rodape .redes-sociais a:hover {
-    background-color: #1ED760;
+    background-color: #2941ab;
+    border-color: #2941ab;
+}
+
+.rodape .redes-sociais a:hover i {
+    color: #ffffff;
 }
 
 .rodape .copyright{
