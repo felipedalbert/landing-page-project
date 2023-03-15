@@ -1,7 +1,3 @@
-
-
-/* RESPONSIVE */
-
 .cabecalho .navegacao label{
     display: block;
     margin-left: 140px;
@@ -112,14 +108,14 @@
         }
     }
 
-    .cabecalho nav{
+    .cabecalho .navigation{
         position: fixed;
         top: 8px;
         right: 16px;
         z-index: 1;
     }
 
-    .cabecalho nav ul a{
+    .cabecalho .navigation ul a{
         text-align: center;
         padding: 20px;
         display: block;
