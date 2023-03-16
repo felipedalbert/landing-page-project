@@ -66,12 +66,9 @@
         display: block;
     }
 
-    .cabecalho .navegacao .menu {
-        flex-direction: column;
-    }
-
     .cabecalho .navegacao ul{
         display: block;
+        flex-direction: column;
         width: 200px;
         padding: 20px;
         border-radius: 7px;
@@ -81,7 +78,7 @@
         pointer-events: none;
     }
 
-    .cabecalho .navegacao ul li a{
+    .cabecalho .navegacao .menu .item a{
       color: #fff;
     }
 
