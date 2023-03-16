@@ -5,44 +5,16 @@ const bullets = document.querySelectorAll('.bullet')
 const totalDeImagens = imagensPainel.length - 1;
 let imagemAtual = 0;
 
-
-function esconderImagens(){
+function alterarImagem(direcao){
     imagensPainel[imagemAtual].classList.remove('mostrar');
-}
 
-function mostrarImagem(){
+    if (direcao === 'avancar') {
+        imagemAtual = (imagemAtual === totalDeImagens) ? 0 : ++imagemAtual;
+    }else{
+        imagemAtual = (imagemAtual === 0) ? totalDeImagens : --imagemAtual;
+    }
+
     imagensPainel[imagemAtual].classList.add('mostrar');
-}
-
-function avancarImagem(){
-    esconderImagens(); 
-
-    if(imagemAtual === totalDeImagens){
-        imagemAtual = 0
-    }else{
-        imagemAtual++;
-    }
-
-    mostrarImagem();
-
-    bullets.forEach((bullet, i) => {
-        bullet.classList.toggle('mostrar', i === imagemAtual);
-    });
-
-    console.log(imagemAtual)
-}
-
-function voltarImagem(){
-
-    esconderImagens();
-
-    if(imagemAtual === 0){
-        imagemAtual = totalDeImagens
-    }else{
-        imagemAtual--; 
-    }
-
-    mostrarImagem();
 
     bullets.forEach((bullet, i) => {
         bullet.classList.toggle('mostrar', i === imagemAtual);
@@ -51,19 +23,27 @@ function voltarImagem(){
 
 function clearTimer() {
     clearInterval(timer);
-    timer = setInterval(avancarImagem, 5000); 
+    timer = setInterval(()=>{alterarImagem('avancar')}, 5000); 
 }
 
-let timer = setInterval(avancarImagem, 5000);
+let timer = setInterval(()=>{alterarImagem('avancar')}, 5000);
 
 setaAvancar.addEventListener('click', ()=>{
-    avancarImagem()
+    alterarImagem('avancar')
     clearTimer()
 })
 
 setaVoltar.addEventListener('click', ()=>{
-    voltarImagem() 
+    alterarImagem('voltar') 
     clearTimer()
+})
+
+document.addEventListener("keydown", (e)=> {
+    if (e.key === "ArrowLeft") {
+        setaVoltar.click()
+    }else if(e.key === "ArrowRight"){
+        setaAvancar.click()
+    }
 })
 
 bullets.forEach((bullet, index) => {
