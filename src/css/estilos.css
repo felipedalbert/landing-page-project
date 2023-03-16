@@ -171,20 +171,20 @@
 }
 
 .quem-somos .conteudo .informacoes {
-    width: 40%;
+    width: 50%;
 }
 
 .quem-somos .conteudo .imagem {
-    width: 60%;
+    width: 50%;
 }
 
 .quem-somos .conteudo .informacoes .titulo {
-    font-size: 3vw;
+    font-size: 2.8vw;
     color: #1ED760;
 }
 
 .quem-somos .conteudo .informacoes .texto {
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     line-height: 1.5;
     color: white;
     font-weight: 400;
@@ -193,7 +193,7 @@
 
 .quem-somos .conteudo .informacoes .saiba-mais{
     color: #8cb9ed;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     font-weight: 700;
     cursor: pointer;
 }
