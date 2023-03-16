@@ -128,12 +128,12 @@
 }
 
 .conteudo-principal .paineis .seta.btn-voltar {
-    left: 2vw;
+    left: 1.2vw;
     transform: rotateY(180deg);
 }
 
 .conteudo-principal .paineis .seta.btn-avancar {
-    right: 2vw;
+    right: 1.2vw;
 }
 
 .conteudo-principal .paineis .bullets{
