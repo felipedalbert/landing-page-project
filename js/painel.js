@@ -4,6 +4,7 @@ const setaVoltar = document.getElementById ('btn-voltar');
 const bullets = document.querySelectorAll('.bullet')
 const totalDeImagens = imagensPainel.length - 1;
 let imagemAtual = 0;
+let timer = setInterval(()=>{alterarImagem('avancar')}, 5000);
 
 function alterarImagem(direcao){
     imagensPainel[imagemAtual].classList.remove('mostrar');
@@ -29,8 +30,6 @@ function alterarBullet(){
         bullet.classList.toggle('mostrar', i === imagemAtual);
     });
 }
-
-let timer = setInterval(()=>{alterarImagem('avancar')}, 5000);
 
 setaAvancar.addEventListener('click', ()=>{
     alterarImagem('avancar')
