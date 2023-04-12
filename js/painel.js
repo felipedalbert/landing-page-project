@@ -2,7 +2,6 @@ const imagensPainel = document.querySelectorAll('.imagem-painel');
 const setaAvancar = document.getElementById ('btn-avancar');
 const setaVoltar = document.getElementById ('btn-voltar');
 const bullets = document.querySelectorAll('.bullet')
-const divBullets = document.querySelector('.bullets')
 const totalDeImagens = imagensPainel.length - 1;
 let imagemAtual = 0;
 
