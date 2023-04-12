@@ -2,6 +2,7 @@ const imagensPainel = document.querySelectorAll('.imagem-painel');
 const setaAvancar = document.getElementById ('btn-avancar');
 const setaVoltar = document.getElementById ('btn-voltar');
 const bullets = document.querySelectorAll('.bullet')
+const divBullets = document.querySelector('.bullets')
 const totalDeImagens = imagensPainel.length - 1;
 let imagemAtual = 0;
 
@@ -16,14 +17,18 @@ function alterarImagem(direcao){
 
     imagensPainel[imagemAtual].classList.add('mostrar');
 
-    bullets.forEach((bullet, i) => {
-        bullet.classList.toggle('mostrar', i === imagemAtual);
-    });
+    alterarBullet()
 }
 
 function clearTimer() {
     clearInterval(timer);
     timer = setInterval(()=>{alterarImagem('avancar')}, 5000); 
+}
+
+function alterarBullet(){
+    bullets.forEach((bullet, i) => {
+        bullet.classList.toggle('mostrar', i === imagemAtual);
+    });
 }
 
 let timer = setInterval(()=>{alterarImagem('avancar')}, 5000);
@@ -49,13 +54,12 @@ document.addEventListener("keydown", (e)=> {
 bullets.forEach((bullet, index) => {
     bullet.addEventListener('click', () => {
         clearTimer()
-
+        
         imagensPainel.forEach((imagem, i) => {
             imagem.classList.toggle('mostrar', i === index);
             imagemAtual = index
         });
-        bullets.forEach((bullet, i) => {
-            bullet.classList.toggle('mostrar', i === index);
-        });
+        
+        alterarBullet()
     });
 });
