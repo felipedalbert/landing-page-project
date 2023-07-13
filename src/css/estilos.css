@@ -71,7 +71,7 @@
     position: absolute;
     z-index: -2;
     opacity: .2;
-    filter: brightness(65%);
+    filter: brightness(50%);
     transition: 0.3s ease-in-out;
 }
 
